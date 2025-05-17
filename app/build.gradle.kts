@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.vasthread.androidexttils"
+    namespace = "com.vasthread.androidexttiles"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.vasthread.androidexttils"
+        applicationId = "com.vasthread.androidexttiles"
         minSdk = 24
         targetSdk = 35
         versionCode = 1
