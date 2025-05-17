@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "SleepTile"
+rootProject.name = "AndroidExtTiles"
 include(":app")
  

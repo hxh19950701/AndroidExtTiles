@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.vasthread.sleeptile"
+    namespace = "com.vasthread.androidexttils"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.vasthread.sleeptile"
+        applicationId = "com.vasthread.androidexttils"
         minSdk = 24
         targetSdk = 35
         versionCode = 1

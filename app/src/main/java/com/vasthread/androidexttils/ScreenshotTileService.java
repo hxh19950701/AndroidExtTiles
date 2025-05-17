@@ -1,17 +1,21 @@
-package com.vasthread.sleeptile;
+package com.vasthread.androidexttils;
 
+import android.app.PendingIntent;
+import android.content.Intent;
+import android.os.Build;
 import android.service.quicksettings.TileService;
 
 import java.io.OutputStream;
 
-public class SleepTileService extends TileService {
+public class ScreenshotTileService extends TileService {
 
     @Override
     public void onClick() {
         try {
             Process process = Runtime.getRuntime().exec("su");
             try (OutputStream output = process.getOutputStream()) {
-                output.write("input keyevent 26\n".getBytes());
+                output.write("service call statusbar 2\n".getBytes());
+                output.write("input keycombination -t 1000 KEYCODE_VOLUME_DOWN KEYCODE_POWER\n".getBytes());
                 output.write("exit\n".getBytes());
             }
             process.waitFor();

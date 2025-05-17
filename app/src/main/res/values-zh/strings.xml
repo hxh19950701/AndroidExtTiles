@@ -1,4 +1,5 @@
 <resources>
-    <string name="app_name">休眠图块</string>
+    <string name="app_name">Android 扩展图块</string>
     <string name="sleep">立即休眠</string>
+    <string name="screenshot">屏幕截图</string>
 </resources>
